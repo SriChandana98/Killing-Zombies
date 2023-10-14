@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Kill or be eaten in the Zombie Mayhem">
+    <meta name="keywords" content="Front End Game, JavaScript, ES6, CSS, SCSS">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="Kill or be eaten in the Zombie Mayhem">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="Game build with HTML5, JavaScript, jQuery, CSS3 and SCSS">
+
+    <title>Kill or be eaten in the Zombie Mayhem</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="/bower_components/tootik/css/tootik.css">
+
+    <link rel="stylesheet" href="styles/main.css">
+
+  </head>
+  <body>
+
+    <div id="canves" data-wave="" class="loading intro">
+      <div class="loader"><div class="loading-char"><div class="zombie-loader"></div><span>Loading</span></div></div>
+      <div class="game-cover"></div>
+      <div class="overlay-screen">
+        <h2 class="big-title game-over-title">Game <div>Over</div></h2>
+        <h2 class="big-title end-game-title">You <div>Won</div></h2>
+        <span class="restart-hint">Click Here to Restart</span>
+        <h2 class="big-title game-pause-title">Paused</h2>
+        <h2 class="big-title level-title">Level <span></span></h2>
+      </div>
+      <ul class="info-board">
+        <li class="killed-status"><span>0</span></li>
+        <li class="life"><i class="heart-icon"></i><i class="heart-icon"></i><i class="heart-icon"></i></li>
+        <li id="mute-music" data-tootik="Mute Music" data-tootik-conf="right invert"></li>
+        <li id="mute-sounds" data-tootik="Mute Sounds" data-tootik-conf="right invert"></li>
+      </ul>
+      <div id="pause-game"></div>
+      <div class="ammo" data-ammo="6"><span class="reload-key">R</span></div>
+      <div class="reload-hint"><div class="reload-trigger"></div></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/derivco-SoundJS@1.0.0/lib/soundjs-0.6.2.combined.min.js"></script>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
